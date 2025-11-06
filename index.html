@@ -540,7 +540,13 @@
             </div>
             
             <div class="action-buttons">
-                <button class="btn btn-primary" id="watch-ad-btn" onclick="watchAd()">
+                <button class="btn btn-primary" id="watch-ad-btn" onclick="// Rewarded interstitial
+
+show_10147547().then(() => {
+    // You need to add your user reward function here, which will be executed after the user watches the ad.
+    // For more details, please refer to the detailed instructions.
+    alert('You have seen an ad!');
+})()">
                     <i class="fas fa-play"></i> বিজ্ঞাপন দেখুন (২ টাকা)
                 </button>
                 <button class="btn btn-success" id="auto-ad-btn" onclick="startAutoAds()">
@@ -1156,4 +1162,5 @@
     </script>
 </body>
 </html>
+
 
